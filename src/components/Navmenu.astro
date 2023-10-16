@@ -1,0 +1,27 @@
+<div>
+    <a href="/">Accueil</a></ul>
+    <a href="/propose-music">Propose une music</a>
+    <a class="ugly" href="/ugly-paint">Dessine sur Paint</a>
+</div>
+
+<style>
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 1em;
+        background-color: #ccc;
+    }
+
+    div > a {
+        place-self: center;
+        background-color: red;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+    }
+
+    .ugly {
+        font-family: 'Comic Sans MS', Impact;
+    }
+</style>

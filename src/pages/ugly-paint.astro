@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SendImage from '../components/SendImage.svelte';
+import ImageGallery from '../components/ImageGallery.svelte'
+---
+
+<Layout title="TMAM PAINT">
+	<main>
+		{Astro.request.method == "POST" && <p>Merci de votre envoi !</p>}
+
+		{Astro.request.method == "GET" && <SendImage/>}
+
+		<ImageGallery/>
+	</main>
+</Layout>
